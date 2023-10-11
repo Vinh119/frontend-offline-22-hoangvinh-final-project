@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
+    <title>Post Details</title>
     <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
 
     <link rel="stylesheet preload" href="assets/css/plugins/fontawesome-5.css" as="style">
@@ -16,7 +16,7 @@
     <link rel="stylesheet preload" href="assets/css/style.css" as="style">
 </head>
 
-<body class="home-one">
+<body class="innerpage">
     <!-- Start Top Header Area -->
 
     <!-- Start Top Header Area -->
@@ -49,23 +49,22 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-7 col-8">
                             <div class="echo-header-top-date">
-
-                                <div id="login">
-                                    <a href="login.html" class="login">Login</a>
-
+                                <div class="echo-day-name">
+                                    <span><i class="fa-regular fa-cloud"></i></span>
+                                    <span id="echo-day" class="echo-home-day"></span>
+                                    <span id="echo-date"></span>
                                 </div>
-                                <div id="register">
-                                    <a href="register.html" class="register">Register</a>
+                                <div class="echo-date-time">
+                                    <span><i class="fa-regular fa-calendar"></i></span>
+                                    <span><strong>31°C,</strong> THỦ ĐỨC </span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-5 col-4 position-relative">
                             <div class="echo-header-top-subs-social-menu">
                                 <div class="echo-header-top-subs-social">
-                                    <div class="echo-header-top-subscribe-btn">
-                                        <a href="#" class="echo-py-btn"
-                                            onclick="document.getElementById('id01').style.display='inline'"><i
-                                                class="fa-regular fa-envelope"></i> Subscribe</a>
+                                    <div class="echo-subscribe home-2-menu-after echo-header-top-subscribe-btn">
+                                        <a href="javascript:void(0)" class="echo-py-btn" onclick="document.getElementById('id01').style.display='inline'"><i class="fa-regular fa-envelope"></i> Subscribe</a>
                                     </div>
                                     <div class="echo-header-top-social-media">
                                         <div class="rts-darkmode">
@@ -74,38 +73,27 @@
                                                 <i class="rts-go-light far fa-sun"></i>
                                             </a>
                                         </div>
-                                        <a href="#" id="search"
-                                            class="echo-header-top-search-btn search-icon action-item icon">
-                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M9.11544 16.961C13.3484 16.961 16.7798 13.5296 16.7798 9.29665C16.7798 5.06373 13.3484 1.63226 9.11544 1.63226C4.88251 1.63226 1.45105 5.06373 1.45105 9.29665C1.45105 13.5296 4.88251 16.961 9.11544 16.961Z"
-                                                    stroke="#5E5E5E" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path d="M14.4461 15.0254L17.451 18.0225" stroke="#5E5E5E"
-                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <a href="#" id="search" class="echo-header-top-search-btn search-icon action-item icon">
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.11556 16.431C13.3485 16.431 16.78 12.9996 16.78 8.76665C16.78 4.53373 13.3485 1.10226 9.11556 1.10226C4.88264 1.10226 1.45117 4.53373 1.45117 8.76665C1.45117 12.9996 4.88264 16.431 9.11556 16.431Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M14.4463 14.4954L17.4512 17.4925" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                             </svg>
                                         </a>
                                         <div class="search-input-area">
                                             <div class="container">
                                                 <div class="search-input-inner">
                                                     <div class="input-div">
-                                                        <input id="searchInput1" class="search-input" type="text"
-                                                            placeholder="Search by keyword or #">
+                                                        <input id="searchInput1" class="search-input" type="text" placeholder="Search by keyword or #">
                                                     </div>
-                                                    <div class="search-close-icon"><i
-                                                            class="fa-regular fa-xmark-large rt-xmark"></i></div>
+                                                    <div class="search-close-icon"><i class="fa-regular fa-xmark-large rt-xmark"></i></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="echo-header-top-menu-bar menu-btn">
                                         <a href="javascript:void(0)">
-                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M0.526001 0.953461H20V3.11724H0.526001V0.953461ZM7.01733 8.52668H20V10.6905H7.01733V8.52668ZM0.526001 16.0999H20V18.2637H0.526001V16.0999Z"
-                                                    fill="#5E5E5E" />
+                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.526001 0.953461H20V3.11724H0.526001V0.953461ZM7.01733 8.52668H20V10.6905H7.01733V8.52668ZM0.526001 16.0999H20V18.2637H0.526001V16.0999Z" fill="#5E5E5E" />
                                             </svg>
                                         </a>
                                     </div>
@@ -120,43 +108,36 @@
         <div class="echo-home-1-menu">
             <div class="echo-site-main-logo-menu-social">
                 <div class="container">
-                    <div class="row align-items-center plr_md--30 plr_sm--30 plr--10">
-                        <div class="col-xl-2 col-lg-2 col-md-7 col-sm-7 col-7">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2 col-7">
                             <div class="echo-site-logo">
-                                <a class="logo-light" href="index.html"><img
-                                        src="assets/images/home-1/site-logo/site-logo.svg" alt="Echo"></a>
-                                <a class="logo-dark" href="index.html"><img
-                                        src="assets/images/home-1/site-logo/site-logo-dark.svg" alt="Echo"></a>
+                                <a class="logo-light" href="index.html"><img src="assets/images/home-1/site-logo/site-logo.svg" alt="Echo"></a>
+                                <a class="logo-dark" href="index.html"><img src="assets/images/home-1/site-logo/site-logo-dark.svg" alt="Echo"></a>
                             </div>
                         </div>
-                        <div class="col-xl-7 col-lg-7 d-none d-lg-block">
+                        <div class="col-xl-7 col-lg-7 d-lg-block d-none">
                             <nav>
                                 <div class="echo-home-1-menu">
                                     <ul class="list-unstyled echo-desktop-menu" id="mainMenu">
+                                       
                                     </ul>
                                 </div>
                             </nav>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-5 col-5">
+                        <div class="col-xl-3 col-lg-3 col-5">
                             <div class="echo-home-1-social-media-icons">
                                 <ul class="list-unstyled social-area">
-                                    <li><a href="https://www.facebook.com/ZendVNHoChiMinh" target="_blank"><i
-                                                class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                                    <li><a href="https://www.youtube.com/user/luutruonghailan" target="_blank"><i
-                                                class="fa-brands fa-youtube"></i></a></li>
-
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                                 </ul>
                                 <div class="echo-header-top-menu-bar menu-btn">
                                     <a href="javascript:void(0)">
-                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.526001 0.953461H20V3.11724H0.526001V0.953461ZM7.01733 8.52668H20V10.6905H7.01733V8.52668ZM0.526001 16.0999H20V18.2637H0.526001V16.0999Z"
-                                                fill="#5E5E5E" />
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.526001 0.953461H20V3.11724H0.526001V0.953461ZM7.01733 8.52668H20V10.6905H7.01733V8.52668ZM0.526001 16.0999H20V18.2637H0.526001V16.0999Z" fill="#5E5E5E" />
                                         </svg>
                                     </a>
                                 </div>
@@ -166,8 +147,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- <-- End Home-1 Menu & Site Logo & Social Media -->
+        <!-- End Home-1 Menu & Site Logo & Social Media -->
     </header>
     <!-- End Top Header Area -->
 
@@ -192,18 +172,16 @@
                                 <div class="content">
                                     <div class="recent-post-title">
                                         <a href="#">The incident began as an argument among.</a>
+                                        <p class="desc"></p>
                                     </div>
-                                    <p class="desc"><a href="#"><i class="fa-light fa-user"></i>Asley Graham</a></p>
                                 </div>
                             </li>
                             <li class="item">
-                                <div class="image-area"><a href="#"><img src="assets/images/category-style-1/2.png"
-                                            alt=""></a></div>
+                                <div class="image-area"><a href="#"><img src="assets/images/category-style-1/2.png" alt=""></a></div>
                                 <div class="content">
                                     <div class="recent-post-title">
                                         <a href="#">The incident began as an argument among.</a>
                                     </div>
-                                    <p class="desc"><a href="#"><i class="fa-light fa-user"></i>Emily Dicingson</a></p>
                                 </div>
                             </li>
                         </ul>
@@ -304,13 +282,11 @@
         <!-- mobile menu area end -->
     </div>
     <!-- header style two End -->
-
     <!-- Start Subscribe Popup Box -->
     <div class="echo-popup-model" id="id01">
         <div class="echo-popup-transition">
             <div class="model-content animate-subscribe-popup">
-                <a href="javascript:void(0)" onclick="document.getElementById('id01').style.display='none'"><i
-                        class="fa-regular fa-xmark"></i></a>
+                <a href="javascript:void(0)" onclick="document.getElementById('id01').style.display='none'"><i class="fa-regular fa-xmark"></i></a>
                 <div class="echo-p-flexing">
                     <div class="echo-p-img">
                         <img src="assets/images/home-1/feature-right/news-item-1.png" alt="Echo">
@@ -337,269 +313,263 @@
     <!-- End Subscribe Popup Box -->
     <!-- End Top Header Area -->
 
-    <!-- Top To Scroll -->
-    <!-- End Top scroll -->
-    <!-- Start Hero Area -->
-    <section class="echo-hero-section">
+    <!-- start breadcrumb area -->
+    <!-- rts breadcrumba area start -->
+    <div class="echo-breadcrumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- bread crumb inner wrapper -->
+                    <div class="breadcrumb-inner text-center">
+                        <!-- <div class="meta">
+                            <a href="#" class="prev">ECHO /</a>
+                            <a href="#" class="next">Single News</a>
+                        </div> -->
+                        <h1 class="title" id="categoryName"> </h1>
+                    </div>
+                    <!-- bread crumb inner wrapper end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rts breadcrumba area end -->
+    <!-- end breadcrumb area -->
+
+    <section class="echo-hero-section inner inner-post">
         <div class="echo-hero">
             <div class="container">
                 <div class="echo-full-hero-content">
-                    <div class="row gx-5">
-                        <div class="col-xl-8 col-lg-7 col-md-12">
-                            <div class="echo-hero-baner" id="EchoHeroBaner">
-
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-5 col-md-12">
-                            <h6 class="text-center">Top Story</h6>
-                            <div class="echo-home-1-hero-area-top-story" id="articlesTopStory">
-
-                                <div class="echo-top-story first">
-
+                    <div class="row gx-5 sticky-coloum-wrap">
+                        <div class="col-xl-8 col-lg-8">
+                            
+                            <div class="echo-hero-baner">
+                                <div class="echo-inner-img-ct-1  img-transition-scale">
+                                    <a href="post-details.html"><img src="" alt="Echo" class="post-style-1-frist-hero-img" id="articlethumb"></a>
                                 </div>
-                                <div class="echo-top-story">
-
+                                <h2 class="echo-hero-title text-capitalize font-weight-bold"><a href="post-details.html" class="title-hover" id="articleTitle"></a></h2>
+                                <div class="echo-hero-area-titlepost-post-like-comment-share">
+                                    <div class="echo-hero-area-like-read-comment-share">
+                                        <a href="#"><i class="fa-light fa-clock" id="publishDate"></i> </a>
+                                    </div>
+                                    <div class="echo-hero-area-like-read-comment-share">
+                                        <a href="#"><i class="fa-light fa-eye"></i> 3.5k Views</a>
+                                    </div>
+                                    <div class="echo-hero-area-like-read-comment-share">
+                                        <a href="#"><i class="fa-light fa-comment-dots"></i> 05 Comment</a>
+                                    </div>
+                                    <div class="echo-hero-area-like-read-comment-share">
+                                        <a href="#"><i class="fa-light fa-arrow-up-from-bracket"></i> 1.5k Share</a>
+                                    </div>
                                 </div>
-
+                                <p class="echo-hero-discription" id="articleContent">
+                                    eleifend quam adipiscing vitae proin. Odio euismod lacinia at quis risus sed vulputate odio.
+                                    Penatibus et magnis dis parturient montes nascetur ridiculus mus. Pulvinar pellentesque habitant morbi tristique
+                                    senectus et netus. Gravida neque convallis a cras. Maecenas pharetra convallis posuere morbi leo. Nunc id cursus metus aliquam eleifend mi in nulla posuere.
+                                </p>
+                                
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Hero Area -->
-
-    <!-- Start Latest News Slider (using Slick Slider version 1.8.1) -->
-    <section class="echo-latest-news-area">
-        <div class="echo-latest-news-content">
-            <div class="container">
-                <div class="echo-be-slider-btn">
-                    <div class="echo-latest-nw-title">
-                        <h4>Latest News</h4>
-                    </div>
-                    <div class="echo-latest-news-next-prev-btn">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
-                <div class="echo-latest-news-full-content">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper" id="articlesLatestNews">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Latest News Slider (using Slick Slider version 1.8.1) -->
-
-    <!-- Start Trending News Area -->
-    <section class="echo-trending-area">
-        <div class="echo-trending-content">
-            <div class="container">
-                <h6>Trending</h6>
-                <div class="echo-trending-full-content">
-                    <div class="row gx-6">
-                        <div class="col-xl-6 col-lg-6 col-md-12" id="articlesTrending">
-
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12" id="articlesTrendingLarge">
-
-                            <hr class="echo-hr-home-1-tranding">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Trending News Area -->
-
-    <section class="echo-video-area">
-        <div class="echo-video-content">
-            <div class="container">
-                <div class="echo-video-area-title-row text-center">
-                    <h6>Videos</h6>
-                </div>
-                <div class="echo-full-video-content">
-                    <div class="row gx-6">
-                        <div class="col-xl-8 col-lg-8 col-md-12" id="articleVideo">
-
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-12" id="articleVideoTopic">
-                            <div class="echo-video-area-home-1-right-content-responsive">
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Start Feature Area -->
-    <section class="echo-feature-area">
-        <div class="echo-feature-area-content">
-            <div class="container">
-                <div class="echo-feature-full-content">
-                    <div class="row gx-6">
-                        <div class="col-xl-8 col-lg-7 col-md-12">
-                            <div class="echo-feature-area-site-title">
-                                <h4>Featured Post</h4>
-                                <div class="row gx-5" id="FeaturedPostTop">
-
+                            <!-- <div class="echo-quote-area">
+                                <h2 class="quote-title">"Life imposes things on you that you can’t control, but you still have the choice of how you’re going to live through this."</h2>
+                                <p class="author">Celine Dion</p>
+                            </div> -->
+                            <!-- <div class="echo-financial-area">
+                                <div class="image-area">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <img src="assets/images/home-1/trending-left/item-7.png" alt="blog" class="post-style-1-new-img">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <img src="assets/images/home-1/trending-left/item-8.png" alt="blog" class="post-style-1-new-img">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="echo-feature-area-last-news">
-                                <div class="row gy-5" id="FeaturedPostBot">
-
+                                
+                            </div> -->
+                            <!-- <div class="echo-author-area">
+                                <div class="image-area">
+                                    <img src="assets/images/home-1/trending-left/lady.png" alt="author">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-5 col-md-12">
-                        <div class="echo-feature-area-right-site-flexing">
-                            <div class="echo-feature-area-right-site-follower">
-                                <h5>Follow Us</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fa-brands fa-facebook"></i>20K Fans</a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i>10K Followers</a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i>50K Followers</a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i>30K Followers</a></li>
-                                    <li><a href="#"><i class="fa-brands fa-pinterest"></i>30K Followers</a></li>
-                                    <li><a href="#"><i class="fa-brands fa-youtube"></i>04K Subscriber</a></li>
-                                </ul>
-                            </div>
-                            <div class="echo-feature-area-right-site-full-content">
-                                <div class="echo-feature-area-right-site-audio-title">
-                                    <h5>New Podcasts</h5>
+                                <div class="content">
+                                    <h5 class="title">Alex Olimiya</h5>
+                                    <p class="desc">I am an Example Writer. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labored et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                 </div>
-                                <div id="NewPodcasts">
-                                    <div class="echo-audio-news-home-1-flexing">
-                                        <div class="echo-feature-area-right-site-audio-news">
-                                            <div class="echo-feature-area-right-img">
-                                                <a href="post-details.html"><img
-                                                        src="assets/images/home-1/feature-right/item-1.png"
-                                                        alt="Echo"></a>
-                                            </div>
-                                            <div class="echo-feature-area-right-audio-text">
-                                                <h5 class="text-capitalize"><a href="post-details.html"
-                                                        class="title-hover">UN
-                                                        chief warns a 'climate time bomb...</a></h5>
-                                                <div class="echo-feature-area-right-site-audio-main-contetn">
-                                                    <!-- Start Audio Player -->
-                                                    <div class="wrappers">
-                                                        <audio preload="auto" controls>
-                                                            <source
-                                                                src="assets/images/home-1/feature-right/my-audio.mp3"
-                                                                type="audio/mpeg">
-                                                        </audio>
-                                                    </div>
-                                                    <!-- End Audio Player -->
+                            </div> -->
+                            <!-- <div class="echo-more-news-area">
+                                <h3 class="title">You Might Also Like</h3>
+                                <div class="inner">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="echo-top-story">
+                                                <div class="echo-story-picture img-transition-scale">
+                                                    <a href="post-details.html"><img src="assets/images/home-1/trending-left/item-9.png" alt="Echo" class="img-hover"></a>
+                                                </div>
+                                                <div class="echo-story-text">
+                                                    <h6><a href="#" class="title-hover">ChatGPT returns to Italy after ban</a></h6>
+                                                    <a href="#" class="pe-none"><i class="fa-light fa-clock"></i> 06 minute read</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <hr>
+                                        <div class="col-lg-6">
+                                            <div class="echo-top-story">
+                                                <div class="echo-story-picture img-transition-scale">
+                                                    <a href="post-details.html"><img src="assets/images/home-1/trending-left/item-10.png" alt="Echo" class="img-hover"></a>
+                                                </div>
+                                                <div class="echo-story-text">
+                                                    <h6><a href="#" class="title-hover">Meta to wind down NFTs on platforms...</a></h6>
+                                                    <a href="#" class="pe-none"><i class="fa-light fa-clock"></i> 06 minute read</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
-
+                            </div> -->
+                            <div class="echo-reply-area">
+                                <h5 class="title">Comment</h5>
+                                <ul class="comment-inner">
+                                    <li class="wrapper">
+                                        <div class="image-area">
+                                            <img src="assets/images/home-1/trending-left/commentator-1.png" alt="author">
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="title">Esther Howard</h5>
+                                            <a href="#" class="pe-none">2 Jul 2023</a>
+                                            <p class="desc">Efficiently simplify alternative customer service rather than efficient "outside the box" thinking. Dramatically deploy an expanded array of manufactured.</p>
+                                        </div>
+                                        <div class="reply"><i class="fa-regular fa-share"></i> Reply</div>
+                                    </li>
+                                    <li class="wrapper">
+                                        <div class="image-area">
+                                            <img src="assets/images/home-1/trending-left/commentator-2.png" alt="author">
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="title">Esther Howard</h5>
+                                            <a href="#" class="pe-none">2 Jul 2023</a>
+                                            <p class="desc">Efficiently simplify alternative customer service rather than efficient "outside the box" thinking. Dramatically deploy an expanded array of manufactured.</p>
+                                        </div>
+                                        <div class="reply"><i class="fa-regular fa-share"></i> Reply</div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="echo-feature-area-right-site-newsletter">
-                                <div class="echo-feature-area-rigth-site-newsletter-title">
-                                    <h5>Newsletter</h5>
-                                </div>
-                                <div class="echo-feature-area-right-site-newsletter-img">
-                                    <img src="assets/images/home-1/feature-right/news-item-1.png" alt="Echo">
-                                </div>
-                                <div class="echo-feature-area-right-site-sub-title">
-                                    <p>Stay Tuned With Updates</p>
-                                </div>
-                                <div class="echo-feature-area-right-site-news-subscribe">
-                                    <form action="POST">
-                                        <div class="echo-feature-area-right-site-input-box">
-                                            <input type="email" placeholder="Email Addresss.." required>
-                                            <button type="submit"><i class="fa-regular fa-arrow-right"></i></button>
+                            <div class="echo-comment-box">
+                                <div class="comment-box-inner">
+                                    <h5 class="title">Leave A Comment</h5>
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder="Full Name" required>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input type="email" placeholder="Email Address" required>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <textarea name="text" placeholder="Write Your Comment Here"></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="submit-btn">Submit Now</button>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- End Feature Area -->
-
-    <!-- Start popular News Area -->
-    <section class="echo-popular-news-area">
-        <div class="echo-popular-news-area-content">
-            <div class="container">
-                <div class="echo-popular-news-area-full-content">
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <div class="echo-popular-area-title">
-                                <h4 class="text-center text-capitalize">Popular of the Weeks</h4>
+                        <div class="col-xl-4 col-lg-4 sticky-coloum-item">
+                            <div class="echo-right-ct-1">
+                                <div class="echo-popular-hl-img">
+                                    <div class="echo-home-2-title">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="echo-home-2-main-title">
+                                                    <h5 class="text-capitalize text-center">Popular Categories</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="echo-popular-item">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <h5>Fashion & Life Style</h5>
+                                            </li>
+                                            <li>
+                                                <h5>Relationship</h5>
+                                            </li>
+                                            <li>
+                                                <h5>Art & Culture</h5>
+                                            </li>
+                                            <li>
+                                                <h5>Self Development</h5>
+                                            </li>
+                                            <li>
+                                                <h5>travel & tourism</h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="echo-home-1-hero-area-top-story">
+                                    <h5 class="text-center">Top Story</h5>
+                                    <div id="TopStory">
+                                        <div class="echo-top-story">
+                                            <div class="echo-story-picture img-transition-scale">
+                                                <a href="post-details.html"><img src="assets/images/category-style-1/item-9.png" alt="Echo" class="img-hover"></a>
+                                            </div>
+                                            <div class="echo-story-text">
+                                                <h6><a href="#" class="title-hover">14 Tight Samurai Games You...</a></h6>
+                                                <a href="#" class="pe-none"><i class="fa-light fa-clock"></i> 06 minute read</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="echo-feature-area-right-site-follower">
+                                    <div class="echo-home-2-title">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="echo-home-2-main-title">
+                                                    <h5 class="text-capitalize text-center">Follow Us</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#"><i class="fa-brands fa-facebook"></i>20K Fans</a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i>10K Followers</a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i>50K Followers</a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin"></i>30K Followers</a></li>
+                                        <li><a href="#"><i class="fa-brands fa-pinterest"></i>30K Followers</a></li>
+                                        <li><a href="#"><i class="fa-brands fa-youtube"></i>04K Subscriber</a></li>
+                                    </ul>
+                                </div>
+                                <div class="echo-feature-area-right-site-newsletter">
+                                    <div class="echo-feature-area-rigth-site-newsletter-title">
+                                        <h4>Newsletter</h4>
+                                    </div>
+                                    <div class="echo-feature-area-right-site-newsletter-img">
+                                        <img src="assets/images/home-1/feature-right/news-item-1.png" alt="Echo">
+                                    </div>
+                                    <div class="echo-feature-area-right-site-sub-title">
+                                        <p>Stay Tuned With Updates</p>
+                                    </div>
+                                    <div class="echo-feature-area-right-site-news-subscribe">
+                                        <form action="POST">
+                                            <div class="echo-feature-area-right-site-input-box">
+                                                <input type="email" placeholder="Email Addresss.." required>
+                                                <button type="submit"><i class="fa-regular fa-arrow-right"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="echo-ct-1-add">
+                                    <div class="echo-ct-add-img">
+                                        <a href="#"><img src="assets/images/category-style-1/item-10.png" alt="Echo"></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row gx-5" id="articlesPopularWeek">
-
-                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Popular News Area -->
-
-    <!-- Start Our Software Download -->
-    <section class="echo-software-download-area">
-        <div class="container">
-            <div class="echo-software-download-full-content-bg">
-                <div class="echo-software-download-img-content">
-                    <img src="assets/images/home-1/our-android-app-download/item-1.png" alt="Echo">
-                </div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="echo-software-download-full-content">
-                            <div class="echo-software-download-text-content">
-                                <div class="echo-software-download-title">
-                                    <h2 class="text-capitalize">Download our apps for<br> stay update</h2>
-                                </div>
-                                <div class="echo-software-download-sub-title">
-                                    <p>Easy to update latest news, aily podcast and <br> everything in your hand</p>
-                                </div>
-                                <div class="echo-software-download-place">
-                                    <a href="#" class="echo-py-hover-white"> <svg width="18" height="22"
-                                            viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M16.4877 7.75092C16.3667 7.84543 14.2305 9.05726 14.2305 11.7518C14.2305 14.8685 16.9487 15.9711 17.0301 15.9984C17.0176 16.0657 16.5983 17.5085 15.5969 18.9786C14.7041 20.2724 13.7716 21.564 12.353 21.564C10.9344 21.564 10.5693 20.7344 8.93172 20.7344C7.33583 20.7344 6.7684 21.5913 5.47083 21.5913C4.17325 21.5913 3.26787 20.3942 2.22689 18.924C1.0211 17.1977 0.046875 14.5157 0.046875 11.9702C0.046875 7.88744 2.68375 5.72212 5.2789 5.72212C6.65784 5.72212 7.8073 6.63361 8.67304 6.63361C9.49707 6.63361 10.7821 5.66752 12.3509 5.66752C12.9454 5.66752 15.0817 5.72212 16.4877 7.75092ZM11.6061 3.93904C12.2549 3.16407 12.7139 2.08876 12.7139 1.01345C12.7139 0.864336 12.7014 0.713121 12.6742 0.591309C11.6187 0.631213 10.3628 1.29908 9.60555 2.18327C9.011 2.86374 8.45609 3.93904 8.45609 5.02905C8.45609 5.19287 8.48321 5.35668 8.49572 5.40919C8.56248 5.42179 8.67096 5.43649 8.77944 5.43649C9.72654 5.43649 10.9177 4.79803 11.6061 3.93904Z"
-                                                fill="#fff" />
-                                        </svg>
-                                        Apple Store</a>
-                                    <a href="#" class="echo-py-hover-white"><svg width="18" height="20"
-                                            viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.949986 0.589355L10.5561 10.0894L0.950929 19.5894C0.780128 19.5184 0.63437 19.399 0.531982 19.2464C0.429594 19.0937 0.375148 18.9145 0.37549 18.7313V1.4474C0.375562 1.26443 0.430067 1.08552 0.532218 0.932956C0.634369 0.780388 0.779655 0.660895 0.949986 0.589355ZM11.223 10.7487L13.3946 12.8957L3.07722 18.8022L11.223 10.7487ZM14.2407 7.76612L16.8887 9.28261C17.0317 9.3646 17.1503 9.48227 17.2328 9.62386C17.3153 9.76544 17.3587 9.92596 17.3587 10.0894C17.3587 10.2527 17.3153 10.4133 17.2328 10.5549C17.1503 10.6964 17.0317 10.8141 16.8887 10.8961L14.2398 12.4126L11.8899 10.0894L14.2407 7.76612ZM3.07722 1.37651L13.3955 7.28207L11.223 9.42997L3.07722 1.37651Z"
-                                                fill="white" />
-                                        </svg> Play Store</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Our Software Download -->
-
 
     <!-- Start Footer Area -->
     <!-- Start Footer Area -->
@@ -616,7 +586,7 @@
                         <span class="text-capitalize"><i class="fa-sharp fa-regular fa-envelope"></i>
                             info@demomail.com</span>
                         <div class="echo-footer-social-media">
-                            <a href="https://www.facebook.com/ZendVNHoChiMinh" target="_blank">
+                            <a href="#">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
                             <a href="#">
@@ -628,7 +598,7 @@
                             <a href="#">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
-                            <a href="https://www.youtube.com/user/luutruonghailan" target="_blank">
+                            <a href="#">
                                 <i class="fa-brands fa-youtube"></i>
                             </a>
                         </div>
@@ -677,11 +647,8 @@
                     <div class="echo-subscribe-box-button">
                         <form action="POST">
                             <div class="echo-subscribe-input-fill">
-                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity="0.8"
-                                        d="M14.4414 11.6674C14.4402 11.8345 14.3734 11.9944 14.2553 12.1127C14.1371 12.2309 13.9773 12.2979 13.8101 12.2993H2.34541C2.17792 12.2991 2.01736 12.2325 1.89899 12.114C1.78062 11.9955 1.71413 11.8348 1.71413 11.6674V11.0265H13.1687V3.58109L8.07777 8.16291L1.71413 2.43564V1.48109C1.71413 1.31232 1.78118 1.15045 1.90052 1.03111C2.01986 0.911772 2.18172 0.844727 2.3505 0.844727H13.805C13.9738 0.844727 14.1357 0.911772 14.255 1.03111C14.3744 1.15045 14.4414 1.31232 14.4414 1.48109V11.6674ZM3.26304 2.11745L8.07777 6.45109L12.8925 2.11745H3.26304ZM0.441406 8.48109H5.53232V9.75382H0.441406V8.48109ZM0.441406 5.29927H3.62322V6.572H0.441406V5.29927Z"
-                                        fill="white" />
+                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.8" d="M14.4414 11.6674C14.4402 11.8345 14.3734 11.9944 14.2553 12.1127C14.1371 12.2309 13.9773 12.2979 13.8101 12.2993H2.34541C2.17792 12.2991 2.01736 12.2325 1.89899 12.114C1.78062 11.9955 1.71413 11.8348 1.71413 11.6674V11.0265H13.1687V3.58109L8.07777 8.16291L1.71413 2.43564V1.48109C1.71413 1.31232 1.78118 1.15045 1.90052 1.03111C2.01986 0.911772 2.18172 0.844727 2.3505 0.844727H13.805C13.9738 0.844727 14.1357 0.911772 14.255 1.03111C14.3744 1.15045 14.4414 1.31232 14.4414 1.48109V11.6674ZM3.26304 2.11745L8.07777 6.45109L12.8925 2.11745H3.26304ZM0.441406 8.48109H5.53232V9.75382H0.441406V8.48109ZM0.441406 5.29927H3.62322V6.572H0.441406V5.29927Z" fill="white" />
                                 </svg>
                                 <input type="email" placeholder="Enter your email" required>
                             </div>
@@ -694,8 +661,7 @@
             </div>
             <div class="echo-footer-copyright-area">
                 <div class="copyright-area-inner">
-                    <div class="footer-logo"><a href="index.html"><img
-                                src="assets/images/home-1/site-logo/footer-logo-1.svg" alt="logo"></a></div>
+                    <div class="footer-logo"><a href="index.html"><img src="assets/images/home-1/site-logo/footer-logo-1.svg" alt="logo"></a></div>
                     <div class="copyright-content">
                         <h5 class="title">© Copyright 2023 by Echo</h5>
                     </div>
@@ -741,16 +707,17 @@
 
     <!-- main js file -->
     <script src="assets/js/main.js" defer></script>
+    <!-- End Footer Area -->
 
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.9/plugin/relativeTime.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.9/locale/vi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.9/locale/vi.js"></script>  
 
-    <script src="js/general.js"></script>
     <!-- <script src="js/search.js"></script> -->
-    <script src="js/index.js"></script>
-    <!-- End Footer Area -->
+    <script src="js/general.js"></script>
+    <script src="js/post-details.js"></script>
+
 
 </body>
 

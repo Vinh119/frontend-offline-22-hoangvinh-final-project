@@ -174,7 +174,7 @@
             }
             h4{
                 margin-bottom: 8px;
-                font-size: 24px;
+                font-size: 16px;
                 line-height: 34px;
                 @media (min-width: 992px) and (max-width: 1200px){
                     font-size: 20px;
@@ -474,7 +474,7 @@
             display: flex;
             gap: 32px;
             margin: 35px 0;
-            align-items: center;
+            align-items: flex-start;
             @media (min-width: 768px) and (max-width: 991px){
                 gap: 18px;
                 margin: 20px 0;
